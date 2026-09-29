@@ -31,18 +31,14 @@ Invoke `$scientific-software-ux` or `$healthcare-software-ux` in Codex; `/scient
 - “Use Healthcare Software UX to review this patient portal's results page for comprehension, access needs, and next-step clarity.”
 - “Use Healthcare Software UX to improve this order workflow. Preserve patient context and distinguish saved drafts, submission, acceptance, and signing.”
 
-## Research and validation
+## References
 
-Source review dated September 28, 2026. The core skills cover scientific and healthcare interfaces. Executive public-health briefings and CDC/USWDS integration are optional healthcare references, used only when relevant to the requested project.
+Each skill includes source citations and guidance on interpreting the evidence:
 
-- [Research review and corrections](RESEARCH-REVIEW.md)
-- [Scientific Software UX instructions](skills/scientific-software-ux/SKILL.md)
-- [Healthcare Software UX instructions](skills/healthcare-software-ux/SKILL.md)
-- [Validation record and test prompts](VALIDATION.md)
+- [Scientific Software UX: evidence and evaluation](skills/scientific-software-ux/references/evidence-and-evaluation.md)
+- [Healthcare Software UX: sources](skills/healthcare-software-ux/references/sources.md)
 
-Supported guidance, study findings, scoped requirements, and design proposals are identified separately. This is a targeted source audit, not proof that every design pattern generalizes or that these skills improve operational outcomes.
-
-The skills use the [Agent Skills format](https://agentskills.io/specification), with relative references and no required service, API key, or executable helper. Source verification requires browsing when requested. Native installation and behavior need testing in each advertised host; a shared format alone does not guarantee identical behavior.
+The skills use the [Agent Skills format](https://agentskills.io/specification), with self-contained references and no required service, API key, or executable helper. Installation and behavior can vary by host.
 
 ## License
 
