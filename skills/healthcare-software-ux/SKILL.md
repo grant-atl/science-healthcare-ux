@@ -1,7 +1,10 @@
 ---
 name: healthcare-software-ux
+description: "Design, implement, or review healthcare software UI/UX for clinicians, patients, caregivers, and care teams: EHRs, patient portals, scheduling, ordering, results, monitoring, alerts, and care coordination. Use when patient and encounter context, clinical values with units and time, order or message status, alert design, or recovery from consequential mistakes matter. For WCAG accessibility audits, prefer an accessibility skill. Not medical advice, clinical rules, or compliance certification."
 license: MIT
-description: "Design, implement, or review healthcare UI/UX for clinicians, patients, caregivers, and care teams: EHRs, portals, monitoring, ordering, and coordination. Not medical advice or certification."
+metadata:
+  author: grant-atl
+  version: "1.1.0"
 ---
 
 # Healthcare Software UX
@@ -50,7 +53,7 @@ Use existing answers. State reasonable assumptions and proceed on independent wo
 2. Associate each value with its label, unit, time and source where needed for interpretation. Missing, zero, unavailable, stale, estimated and final are different states.
 3. Preserve clinically relevant density and comparison context. Do not hide units, timestamps, exceptions, or important options just to simplify the screen.
 4. Distinguish draft, saving, saved, queued, sent, accepted, signed, acknowledged and failed as the real system supports them. A local change or successful request is not proof that downstream care occurred.
-5. Prevent unsafe ambiguity before adding warnings. Apply constraints and defaults from approved domain rules; make significant defaults visible and editable where appropriate. Never invent dose limits, diagnostic thresholds, treatments, alarm priorities or clinical escalation instructions.
+5. Prevent unsafe ambiguity before adding warnings. Apply constraints and defaults from approved domain rules; make significant defaults visible and editable where appropriate. Never invent dose limits, diagnostic thresholds, treatments, alarm priorities or clinical escalation instructions. This includes illustrative examples, test scenarios, and verification steps: write "[approved dosing rule]" or "a value outside the product's configured reference range" rather than a specific dose, rate, threshold, or frequency. Do not interpret displayed values clinically (for example, calling a result low or a diagnosis likely) unless the product supplies the unit and reference range; name the missing context as the finding instead.
 6. Add friction in proportion to the potential harm and reversibility. A consequential confirmation identifies the object and consequence; routine actions should not train users to dismiss generic warnings.
 7. Tier alerts by validated urgency, severity and actionability. Preserve their rationale and response options. Do not silence, suppress, or change clinical rules merely to reduce visual noise.
 8. Preserve work through interruption and recovery using approved secure storage. Resolve conflicts and ambiguous submissions explicitly; do not silently duplicate an order or imply software undo reverses real-world treatment.
@@ -62,6 +65,8 @@ Use existing answers. State reasonable assumptions and proceed on independent wo
 ## Verify and deliver
 
 Choose checks from the changed task's plausible failure modes, not an indiscriminate checklist. Test the primary action, critical context, failure/recovery, and affected keyboard/mobile behavior. Include interruptions, network ambiguity, and stale data when the flow depends on them.
+
+Before delivering, reread findings, fixes, and verification steps for invented clinical content: specific doses, rates, frequencies, thresholds, or interpretations not present in the product or an approved source. Replace each with a placeholder and an owner.
 
 Use representative users for claims about real-world usability or comprehension. An agent walkthrough, automated accessibility scan, code test, or attractive prototype cannot establish clinical safety, WCAG conformance, or regulatory approval.
 

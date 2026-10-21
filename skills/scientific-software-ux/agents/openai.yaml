@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Software UX"
+  short_description: "Design and review research, lab, and analysis interfaces"
+  default_prompt: "Use $scientific-software-ux to review this scientific interface for units, provenance, run state, and recovery."

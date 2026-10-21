@@ -1,0 +1,4 @@
+interface:
+  display_name: "Healthcare Software UX"
+  short_description: "Design and review clinical, patient, and care-team interfaces"
+  default_prompt: "Use $healthcare-software-ux to review this healthcare interface for patient context, workflow state, and safe recovery."

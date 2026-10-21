@@ -1,0 +1,23 @@
+{
+  "skill_name": "scientific-software-ux",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review evals/files/simulation-results.html as a scientific software UX review. Do not edit it. Give findings with consequence, fix, and how to verify.",
+      "files": [
+        "evals/files/simulation-results.html"
+      ],
+      "expected_output": "Findings on missing units, ambiguous run identity, hidden parameters and version, rerun overwriting provenance, zero vs missing/failed, 'Done' conflating completion with validity, and unscoped delete.",
+      "expectations": [
+        "Flags temperature, pressure, and yield shown without units",
+        "Flags two runs both named 'Baseline' with no stable run ID or version",
+        "Flags that 'default settings' hides the actual resolved parameters and model version",
+        "Flags that Re-run replaces results in place instead of creating a linked new run",
+        "Questions whether yield 0 means zero, missing, failed, or below detection",
+        "Distinguishes the 'Done' status from scientific validity or QC acceptance",
+        "Flags that Delete acts on every filtered row without showing scope or allowing recovery",
+        "Stays read-only and does not invent scientific values or valid ranges"
+      ]
+    }
+  ]
+}

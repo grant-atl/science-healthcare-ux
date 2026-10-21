@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Review the medication ordering screen in our EHR; we worry about wrong-patient orders.",
+    "should_trigger": true
+  },
+  {
+    "query": "Design a lab results page for patients that explains out-of-range values clearly without giving medical advice.",
+    "should_trigger": true
+  },
+  {
+    "query": "Our ICU monitoring dashboard has alert fatigue. Redesign how alerts are tiered and acknowledged.",
+    "should_trigger": true
+  },
+  {
+    "query": "Improve our clinic's appointment booking flow so patients know when a booking is actually confirmed.",
+    "should_trigger": true
+  },
+  {
+    "query": "Design the handoff screen nurses use at shift change so nothing about the patient gets lost.",
+    "should_trigger": true
+  },
+  {
+    "query": "How should our telehealth app show message status: sent, read, and answered by the care team?",
+    "should_trigger": true
+  },
+  {
+    "query": "Audit our patient portal for WCAG 2.2 AA and screen reader support.",
+    "should_trigger": false
+  },
+  {
+    "query": "Review this simulation results screen for units, parameters, and provenance.",
+    "should_trigger": false
+  },
+  {
+    "query": "What dose of ibuprofen is safe for a 6-year-old?",
+    "should_trigger": false
+  },
+  {
+    "query": "Set up a Postgres schema for storing appointment records.",
+    "should_trigger": false
+  }
+]

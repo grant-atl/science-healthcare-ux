@@ -1,6 +1,6 @@
 # Installation and distribution
 
-Instructions checked September 28, 2026. The [GitHub repository](https://github.com/grant-atl/science-healthcare-ux) contains two independently installable skills under the [MIT license](LICENSE).
+Instructions checked October 21, 2026. The [GitHub repository](https://github.com/grant-atl/science-healthcare-ux) contains two independently installable skills under the [MIT license](LICENSE).
 
 ## Install either skill
 
@@ -27,6 +27,6 @@ For Claude web/desktop upload, ZIP the selected skill folder with one top-level 
 
 - **skills.sh:** files remain hosted in GitHub. The [FAQ](https://www.skills.sh/docs/faq) describes listing through installation telemetry; do not assume immediate indexing or a specific rank.
 - **OpenAI Plugins Directory:** a separate skills-only plugin route with verified publisher identity, listing material, five positive and three negative cases, review, and a later publication step. No server is required for a skills-only plugin, but this bundle does not include a plugin wrapper or submission. [Packaging](https://developers.openai.com/plugins/build/plugins), [submission](https://developers.openai.com/plugins/deploy/submission).
-- **Claude plugin distribution:** optional plugin/catalog packaging. Hosting a catalog and submitting to Anthropic's directory are different actions. [Marketplace documentation](https://code.claude.com/docs/en/plugin-marketplaces).
+- **Claude plugin distribution:** this repository is also a Claude Code plugin marketplace (`.claude-plugin/`). Install with `claude plugin marketplace add grant-atl/science-healthcare-ux`, then `claude plugin install science-healthcare-ux@science-healthcare-ux`. Hosting this catalog and submitting to Anthropic's directory are different actions. [Marketplace documentation](https://code.claude.com/docs/en/plugin-marketplaces).
 
 The first release needs no website or running service. Describe it as research-informed interface guidance. Preserve third-party source terms; the MIT license covers this repository’s original material, not the linked source publications.

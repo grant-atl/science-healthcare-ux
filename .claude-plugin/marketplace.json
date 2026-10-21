@@ -1,0 +1,29 @@
+{
+  "name": "science-healthcare-ux",
+  "owner": {
+    "name": "grant-atl",
+    "url": "https://github.com/grant-atl"
+  },
+  "metadata": {
+    "description": "Scientific and healthcare software UX skills for Claude Code",
+    "version": "1.1.0",
+    "homepage": "https://github.com/grant-atl/science-healthcare-ux#readme"
+  },
+  "plugins": [
+    {
+      "name": "science-healthcare-ux",
+      "source": "./",
+      "description": "Design and review scientific and healthcare software interfaces without losing domain meaning, context, or recovery paths",
+      "version": "1.1.0",
+      "author": {
+        "name": "grant-atl",
+        "url": "https://github.com/grant-atl"
+      },
+      "homepage": "https://github.com/grant-atl/science-healthcare-ux#readme",
+      "repository": "https://github.com/grant-atl/science-healthcare-ux",
+      "license": "MIT",
+      "category": "design",
+      "keywords": ["ux", "scientific-software", "healthcare", "ehr", "design-review"]
+    }
+  ]
+}

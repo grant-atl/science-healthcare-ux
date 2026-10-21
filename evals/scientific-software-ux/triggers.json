@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Review this simulation results screen: are units, input parameters, and run-to-run comparison clear enough to reproduce a result?",
+    "should_trigger": true
+  },
+  {
+    "query": "Design the acquisition flow for our mass spectrometer control UI, including calibration state and run status.",
+    "should_trigger": true
+  },
+  {
+    "query": "Our LIMS sample table is confusing. Improve how sample IDs, versions, and provenance are shown.",
+    "should_trigger": true
+  },
+  {
+    "query": "Make our analysis dashboard show which pipeline version and parameters produced each figure.",
+    "should_trigger": true
+  },
+  {
+    "query": "Redesign the failed-job state in our HPC job submission UI so researchers know what ran and how to recover.",
+    "should_trigger": true
+  },
+  {
+    "query": "How should our microscopy image viewer show scale bars, channels, and acquisition metadata?",
+    "should_trigger": true
+  },
+  {
+    "query": "Review the medication ordering screen in our EHR; we worry about wrong-patient orders.",
+    "should_trigger": false
+  },
+  {
+    "query": "Audit our patient portal for WCAG 2.2 AA and screen reader support.",
+    "should_trigger": false
+  },
+  {
+    "query": "Fit a linear regression to this CSV and tell me whether the slope is significant.",
+    "should_trigger": false
+  },
+  {
+    "query": "Make the hero section of our marketing site look more modern.",
+    "should_trigger": false
+  }
+]

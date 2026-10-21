@@ -1,0 +1,20 @@
+<!-- Eval fixture: synthetic medication order screen with planted UX problems. Synthetic patients only. -->
+<header><span class="small">Pt: J. Smith</span></header>
+<main>
+  <h1>New order</h1>
+  <label>Medication <input value="Heparin"></label>
+  <label>Dose <input value="5000"></label>
+  <label>Frequency <select><option>q12h</option></select></label>
+  <section class="recent-labs">
+    <h2>Recent labs</h2>
+    <p>Platelets: 85</p>
+    <p>aPTT: —</p>
+  </section>
+  <div class="alert">⚠ Interaction warning <button onclick="this.parentElement.remove()">✕</button></div>
+  <button onclick="if (confirm('Are you sure?')) save()">Submit</button>
+  <div class="toast" hidden>Order sent to pharmacy</div>
+</main>
+<script>
+  // save() stores a local draft only; signing and pharmacy transmission happen later, elsewhere.
+  function save() { localStorage.setItem("draft", "heparin"); document.querySelector(".toast").hidden = false; }
+</script>

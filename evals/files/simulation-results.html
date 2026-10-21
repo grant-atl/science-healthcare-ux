@@ -1,0 +1,19 @@
+<!-- Eval fixture: synthetic simulation results screen with planted UX problems. Not real research data. -->
+<main>
+  <h1>Results</h1>
+  <p class="status ok">✔ Done</p>
+  <table>
+    <tr><th>Run</th><th>Temperature</th><th>Pressure</th><th>Yield</th></tr>
+    <tr><td>Baseline</td><td>298</td><td>1.0</td><td>0.82</td></tr>
+    <tr><td>Baseline</td><td>310</td><td>1.0</td><td>0</td></tr>
+    <tr><td>High-P</td><td>298</td><td>5.0</td><td>0.91</td></tr>
+  </table>
+  <button onclick="rerun()">Re-run</button>
+  <button onclick="deleteSelected()">Delete</button>
+  <p class="note">Results use default settings.</p>
+</main>
+<script>
+  // Re-run replaces the current results in place with a fresh run using the latest model version.
+  function rerun() { document.querySelector("table").dataset.version = "latest"; }
+  function deleteSelected() { /* deletes every row matching the current filter */ }
+</script>

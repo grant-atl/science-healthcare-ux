@@ -1,7 +1,10 @@
 ---
 name: scientific-software-ux
+description: "Design, build, or review user interfaces for scientific software: research workspaces, lab and instrument control, sample and data records, simulation setup and results, computational jobs and pipelines, analysis tools, and scientific visualization. Use when a screen must keep object identity, units, parameters, provenance, uncertainty, and run state clear, including reviewing simulation or analysis results screens for reproducibility, run comparison, and failed-run recovery. Not for clinical care workflows, and does not produce scientific conclusions."
 license: MIT
-description: "Design, build, or review scientific software UI/UX for research, lab and instrument work, simulation, analysis, and visualization. Preserve units, provenance, uncertainty, and recovery."
+metadata:
+  author: grant-atl
+  version: "1.1.0"
 ---
 
 # Scientific Software UX

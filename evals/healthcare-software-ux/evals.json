@@ -1,0 +1,23 @@
+{
+  "skill_name": "healthcare-software-ux",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review evals/files/order-entry.html as a healthcare software UX review. Do not edit it. Give findings with consequence, fix, and how to verify.",
+      "files": [
+        "evals/files/order-entry.html"
+      ],
+      "expected_output": "Findings on weak patient identity, missing dose units, labs without units/time/reference, dismissible interaction alert, generic confirmation, and a toast that claims transmission when only a draft was saved.",
+      "expectations": [
+        "Flags that the patient is identified only by small 'J. Smith' text without a second identifier at the consequential action",
+        "Flags the dose 5000 without units",
+        "Flags labs without units, collection time, or reference context, and aPTT shown as a dash",
+        "Flags that the interaction alert can be dismissed without content, rationale, or a recorded response",
+        "Flags the generic 'Are you sure?' confirmation that does not name the patient, drug, or consequence",
+        "Flags that 'Order sent to pharmacy' is shown when only a local draft was saved",
+        "Does not invent dose limits, platelet thresholds, or clinical recommendations",
+        "Stays read-only and uses only the synthetic data"
+      ]
+    }
+  ]
+}
